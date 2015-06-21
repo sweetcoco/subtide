@@ -1,0 +1,6 @@
+<ul class="list-unstyled">
+    <li class="header">active</li>
+    {{#each channel in model}}
+        <li>- {{#link-to 'channel' channel}}{{channel.channelName}}{{/link-to}}</li>
+    {{/each}}
+</ul>

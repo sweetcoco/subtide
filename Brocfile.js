@@ -4,9 +4,15 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
+/**** BOOTSTRAP BITCHES ****/
 app.import('bower_components/bootstrap/dist/css/bootstrap.css');
-
 app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff', {
+  destDir: 'fonts'
+});
+app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2', {
+  destDir: 'fonts'
+});
 
 // Use `app.import` to add additional libraries to the generated
 // output files.

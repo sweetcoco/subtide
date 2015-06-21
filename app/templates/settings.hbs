@@ -5,9 +5,11 @@
   <hr>
 
   <div class="panel-body" id="login-container">
-    <h3>Email Address: <small>{{email}}</small></h3>
-    <h3>Username: <small>{{username}}</small></h3>
-    <h3>First Name: <small>{{firstName}}</small></h3>
-    <h3>Last Name: <small>{{lastName}}</small></h3>
+    <p>Username: {{input type="text" value=model.username}}</p>
+    <p>Email Address: {{input type="text" value=model.email}}</p>
+    <p>First Name: {{input type="text" value=firstName}}</p>
+    <p>Last Name: {{input type="text" value=model.lastName}}</p>
+    {{!debounced-input value=model.firstName debounceWait=300 fireAtStart=false class="form-control" name="firstName"}}
+
   </div>
 </div>
