@@ -18,10 +18,14 @@
 
     <div class="st-widget-body">
         {{#if isCreateChannel}}
-            {{render "create-channel" model}}
+            {{render "create-channel" model.channels}}
         {{else}}
-            {{render "channels-default" model}}
+            {{render "channels-default" model.channels}}
         {{/if}}
+
+        {{!#if hasChannelInvites}}
+            {{render "channel-invites" model.channelInvites}}
+        {{!/if}}
     </div>
 
 </div>

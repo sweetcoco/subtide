@@ -12,12 +12,15 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+        PUSHER_OPTS: {
+            key: '0fbdcd6790847856f960',
+            connection: {},
+            logAllEvents: false
+        }
     }
   };
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
@@ -40,7 +43,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
   }
 
   return ENV;

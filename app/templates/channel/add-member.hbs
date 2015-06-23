@@ -1,13 +1,13 @@
 <ul class="list-unstyled clearfix">
-    <li class="header">Create Channel</li>
+    <li class="header">Add Member</li>
     <li>
         <div class="form-group">
-            {{input type="text" class="form-control" placeholder="Channel Name" value=channelName}}
+            {{input type="email" class="form-control" placeholder="Email Address" value=invitedEmail}}
         </div>
     </li>
     <li>
         <div class="pull-right">
-            <button {{action 'createChannel'}} class="btn btn-default">Create</button>
+            <button {{action 'addMember'}} class="btn btn-default">Add</button>
         </div>
     </li>
 </ul>

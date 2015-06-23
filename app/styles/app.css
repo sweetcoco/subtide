@@ -4,6 +4,9 @@ body {
     color: #FFF;
 }
 
+a {
+    color: #FFF;
+}
 .navbar-menu-button .icon-bar {
     display: block;
     width: 25px;
@@ -28,12 +31,13 @@ ul.navbar-right li {
 
 .navbar-brand {
   float: left;
-  height: 50px;
+  height: 50px !important;
   padding: 15px 15px !important;
   font-size: 35px;
   font-weight: 100;
   color: #FFF;
   line-height: 12px;
+  display: initial !important;
 }
 
 button.navbar-menu-button.collapsed {
@@ -45,6 +49,13 @@ button.navbar-menu-button.collapsed {
     border: 2px solid#FFF;
     border-radius: 2px;
 }
+
+.nav > li > a {
+  position: relative;
+  display: initial;
+  padding: 10px 15px;
+}
+
 
 /** ST WIDGET **/
 

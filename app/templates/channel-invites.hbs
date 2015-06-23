@@ -1,0 +1,6 @@
+<ul class="list-unstyled">
+    <li class="header">invites</li>
+    {{#each channelInvite in model}}
+        <li>- {{channelInvite.channel_id.channelName}}</li>
+    {{/each}}
+</ul>

@@ -1,14 +1,14 @@
 <div class="col-md-3 st-widget">
     <div class="st-widget-header">
         <ul class="list-inline">
-            <li><h2>channels</h2></li>
+            <li><h2>{{model.channelName}}</h2></li>
             <li class="pull-right">
-                {{#if isCreateChannel}}
+                {{#if isAddMember}}
                     <button type="button" {{action 'default'}} class="btn btn-default btn-lg" style="background-color: rgba(255,255,255, 0); border: 0px; color: #fff;">
                       <span>cancel</span>
                     </button>
                 {{else}}
-                    <button type="button" {{action 'createChannel'}} class="btn btn-default btn-lg" style="background-color: rgba(255,255,255, 0); border: 0px; color: #fff;">
+                    <button type="button" {{action 'addMember'}} class="btn btn-default btn-lg" style="background-color: rgba(255,255,255, 0); border: 0px; color: #fff;">
                       <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                     </button>
                 {{/if}}
@@ -17,10 +17,10 @@
     </div>
 
     <div class="st-widget-body">
-        {{#if isCreateChannel}}
-            {{render "create-channel" model}}
+        {{#if isAddMember}}
+            {{render "channel.add-member" model}}
         {{else}}
-            {{render "channels-default" model}}
+            {{render "channel.chats-default" model}}
         {{/if}}
     </div>
 
